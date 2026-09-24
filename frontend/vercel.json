@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/predict",
+      "destination": "https://YOUR-RENDER-BACKEND-URL.onrender.com/predict"
+    },
+    {
+      "source": "/health",
+      "destination": "https://YOUR-RENDER-BACKEND-URL.onrender.com/health"
+    }
+  ]
+}
