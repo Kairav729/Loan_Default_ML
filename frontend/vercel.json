@@ -7,7 +7,12 @@
     {
       "source": "/health",
       "destination": "https://loan-vision-backend-giad.onrender.com/health"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
 }
+
 
