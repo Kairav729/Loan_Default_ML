@@ -2,11 +2,12 @@
   "rewrites": [
     {
       "source": "/predict",
-      "destination": "https://YOUR-RENDER-BACKEND-URL.onrender.com/predict"
+      "destination": "https://loan-vision-backend-giad.onrender.com/predict"
     },
     {
       "source": "/health",
-      "destination": "https://YOUR-RENDER-BACKEND-URL.onrender.com/health"
+      "destination": "https://loan-vision-backend-giad.onrender.com/health"
     }
   ]
 }
+
