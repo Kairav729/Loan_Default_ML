@@ -31,7 +31,7 @@ export default function LoanForm({ onResult, onError }) {
     onError(null);
     onResult(null);
     try {
-      const res = await fetch("/predict", {
+      const res = await fetch("/api/predict", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

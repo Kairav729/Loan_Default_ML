@@ -26,6 +26,7 @@ FEATURE_COLUMNS = [
 
 
 @app.route("/predict", methods=["POST"])
+@app.route("/api/predict", methods=["POST"])
 def predict():
     if model is None:
         return jsonify({"error": "Model not loaded. Run train_model.py first."}), 503
@@ -63,8 +64,10 @@ def predict():
 
 
 @app.route("/health", methods=["GET"])
+@app.route("/api/health", methods=["GET"])
 def health():
     return jsonify({"status": "ok", "model_loaded": model is not None})
+
 
 
 if __name__ == "__main__":
